@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    background:black;
+    margin:0;
+    border:0px;
+    outline:0px;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    height:100%;
+}
+
+
+.taskbar{
+    display:flex;
+    width:100%;
+    background-color: #070604;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+    border:0;
+    padding:0;
+}
+.taskbar nav{
+   padding:0 100px
+}
+.taskbar nav a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+.taskbar nav ul{
+   display: flex;
+   list-style: none;
+}
+.taskbar nav ul li{
+    padding: 0 20px
+}
+
+.taskbar img{
+    width:200px;
+}
+.content{
+    margin:0;
+    padding:0;
+    border:0;
+    background-image: url(images/peakpx.jpg);
+    background-size:cover;
+    height:900px;
+    width:100%;
+   
+    
+}
+.content h1{
+    margin:0px;
+    padding: 300px 20px;
+    border:0;
+    font-size: 100px;
+    
+}
+.content h1 span{
+    color:rgba(92, 2, 2, 0.767);
+}
+.bborder{
+    height: 800px;
+    position:relative;
+    
+}
+.border{
+    text-align: center;
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    backdrop-filter: blur(5);
+    
+}
+
+.bpic{
+    opacity: .2;
+ 
+}
+
+.show{
+    animation: scrollToAnimate 3s forwards;
+}
+
+.meetingcrew{
+    background-image: url(images/onebackground.jpg), linear-gradient(120deg, black, black, black,#003366);
+    background-repeat: no-repeat;
+  
+    font-size: 50px;
+    text-align:center;
+    
+   
+}
+
+
+
+.character0 , .character1 , .character2 , .character3 , .character4, .character5 , .character6 , .character7 , .character8 , .character9{
+    
+    margin-bottom:100px;
+    width: 1300px;
+   
+   
+    border-radius: 15px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 50px 20px;
+    
+    
+}
+
+
+
+.character0{
+   
+    background-image:linear-gradient(45deg, white,#FFFFF0);
+   
+}
+
+
+
+
+.character1{
+   
+    background-image: linear-gradient(45deg, #ab20fd, white);
+
+    
+}
+
+
+
+
+.character2{
+ 
+    background-image: linear-gradient(45deg, #eedc82, #ffef00);
+
+}
+
+
+
+
+
+.character3{
+   
+    background-image: linear-gradient(45deg , #66023c, #7f1734 );
+    
+    
+    
+}
+
+
+
+.character4{
+    
+    background-image: linear-gradient(120deg, #99badd , #40e0d0);
+    
+    
+    
+}
+
+
+
+
+.character5{
+   
+    background-image: linear-gradient(15deg ,#fc6c85, #FADADD);
+    
+    
+    
+}
+
+
+
+
+
+.character6{
+    
+    background-image: linear-gradient(15deg ,#99badd, #ab20fd);
+    
+    
+}
+
+
+
+
+.character7{
+    
+    background-image: linear-gradient(120deg , #7f1734, red, white);
+   
+    
+    
+}
+
+
+
+.character8{
+    background-image: linear-gradient(15deg ,#addfad, white);
+    
+}
+
+
+
+
+.character9{
+    
+    background-image: linear-gradient(120deg ,#1e90ff, white);
+   
+    
+}
+
+
+
+
+#details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+
+
+
+ #details section {
+    
+    color:black;
+    opacity: 0;
+    filter:blur(5px);
+    transform: translateX(-100%) scale(0.7)  ;
+     transition:  transform 1.2s ease, opacity 1s ease, filter 0.8s ease;
+    
+}
+
+#details section.ani{
+
+ transform: translateX(0%) scale(0.5) ;
+    opacity: 0.7;
+    filter:blur(0px);
+}
+
+#details section.ani:hover{
+    opacity: 1;
+    transform:scale(0.7);
+}
+
+
+
+
+#details img{
+    width: 600px;
+    border-radius: 15px;
+   background-color: white;
+}
+
+
+@keyframes scrollToAnimate{
+
+    from{
+        transform:scale(1) ;
+        
+
+    }
+    
+    to{
+        transform:scale(1.2) ;
+        opacity:1;
+
+    }
+
+}
+
+
+
+.fights{
+    background-image: linear-gradient(120deg,#15179b, #1e90ff,#99badd) ;
+    background-repeat:no-repeat ;
+    height: 2500px;
+    margin-top: 50px;
+    
+    
+}
+.fights h1{
+    font-size: 80px;
+    margin-top: 30px;
+    margin-left: 20px;
+    
+}
+
+.fvideo{
+        display: grid;
+        
+        grid-template-columns: auto auto auto auto auto auto;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 100%;
+        height: 500px;
+        border-radius: 15px;
+        overflow-y: scroll;
+        align-content: center;
+        flex:1;
+        max-width: 100vw;
+        
+         
+
+        
+    
+}
+
+.fvideo::-webkit-scrollbar{
+    display:none;
+}
+.fbox{
+        
+   
+   
+    margin: 20px;
+    animation:inscroll 10s linear infinite alternate;
+    
+    
+ 
+    
+}
+.fvideo:hover .fbox{
+    animation-play-state: paused;
+}
+
+.fbox video{
+    opacity:1;
+    width:500px;
+    border-radius: 15px;
+    filter: blur(5px);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+    
+    
+}
+.fbox video:hover{
+    
+    transform: scale(1.1);
+    filter:blur(0px);
+    z-index: 100;
+    border: 2px solid #1e90ff;
+    
+}
+
+
+#bborder2{
+
+    height: 800px;
+
+}
+
+@keyframes inscroll{
+    10%{
+       transform: translate(0);
+    
+    }100%{
+        transform: translate(-80vw)
+    }
+
+    10%{
+        transform: translate(0)
+    }
+
+    
+
+    
+}
+
+.bpic{
+    width: 1250px;
+}
+
+.llogin{
+margin-top: 500px;
+ justify-self: center;
+    
+    justify-items: center;
+    
+}
+
+.login{
+   opacity:0;
+    
+   
+}
+.login.show3{
+   animation:log 2s forwards; 
+   opacity:1;
+   display:flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 500px;
+    height: 400px;
+    background-color:rgba(255, 255, 255, 0.7);
+    padding:50px 10px;
+    border-radius: 15px;
+    justify-content: center;
+}
+.login input{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+}
+.login button{
+   
+    width:100px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: none;
+    align-self: center;
+}
+
+
+.login button:hover{
+    background-color: #99badd;
+    color:white;
+}
+
+.login button:active{
+    background-color: white;
+    color:#070604;
+}
+
+
+@keyframes log {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
